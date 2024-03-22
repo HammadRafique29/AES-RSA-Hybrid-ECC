@@ -1,0 +1,20 @@
+from AES import *
+from RSA import *
+from Hash import *
+from Hybrid_Aes_Rsa import *
+from ECC import ECC_ENCRYPTION
+
+
+if __name__ == "__main__":
+
+    AES_ENCRYPTION = AES_ENCRYPTION()
+    RSA_ENCRYPTION = RSA_ENCRYPTION()
+    HYBRID_ENCRYPTION = HYBRID_ENCRYPTION()
+    HASHING = HASHING()
+    ECC_ALGO = ECC_ENCRYPTION()
+
+    HASHING.SUMMARY()
+    AES_ENCRYPTION.SUMMARY()
+    RSA_ENCRYPTION.SUMMARY()
+    HYBRID_ENCRYPTION.SUMMARY()
+    ECC_ALGO.SUMMARY()
